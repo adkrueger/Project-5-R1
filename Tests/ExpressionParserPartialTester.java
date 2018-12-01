@@ -13,6 +13,7 @@ public class ExpressionParserPartialTester {
 	@Before
 	/**
 	 * Instantiates the actors and movies graphs
+     * TODO: Fix this comment
 	 */
 	public void setUp () throws IOException {
 		_parser = new SimpleExpressionParser();
@@ -25,7 +26,6 @@ public class ExpressionParserPartialTester {
 	public void finishedLoading () {
 		assertTrue(true);
 		// Yay! We didn't crash
-		System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHH");
 	}
 
 	@Test
