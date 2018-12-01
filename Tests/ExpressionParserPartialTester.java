@@ -25,6 +25,7 @@ public class ExpressionParserPartialTester {
 	public void finishedLoading () {
 		assertTrue(true);
 		// Yay! We didn't crash
+		System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHH");
 	}
 
 	@Test
