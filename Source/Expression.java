@@ -33,7 +33,7 @@ interface Expression {
 	 * tree represented by this expression, starting at the specified indentation level.
 	 * @param stringBuilder the StringBuilder to use for building the String representation
 	 * @param indentLevel the indentation level (number of tabs from the left margin) at which to start
-	 */	
+	 */
 	void convertToString (StringBuilder stringBuilder, int indentLevel);
 
 	public default String convertToString (int indentLevel) {
@@ -45,7 +45,7 @@ interface Expression {
 	/**
 	 * Static helper method to indent a specified number of times from the left margin, by
 	 * appending tab characters to the specified StringBuilder.
-	 * @param sb the StringBuilder to which to append tab characters.
+	 * @param stringBuilder the StringBuilder to which to append tab characters.
 	 * @param indentLevel the number of tabs to append.
 	 */
 	public static void indent (StringBuilder stringBuilder, int indentLevel) {
