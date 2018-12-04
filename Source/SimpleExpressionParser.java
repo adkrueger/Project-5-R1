@@ -32,11 +32,15 @@ public class SimpleExpressionParser implements ExpressionParser {
 	
 	private Expression parseExpression(String str) {
 		Expression expression;
-		
-		// TODO implement me
 
-
-		return null;
+		try {
+		    expression = parse(str, false);
+            return expression;
+		}
+		catch(ExpressionParseException e) {
+		    e.printStackTrace();
+		    return null;
+        }
 	}
 
     private static Expression parseHelper(String str, char op, Function<String, Expression> m1,
