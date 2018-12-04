@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3f10a6f-2db9-472b-9838-9e1f428797b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SimpleExpressionImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Project 5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project 5.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Out/production/Project 5/ExpressionImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Out/production/Project 5/SimpleExpressionParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/Out/production/Project 5/SimpleExpressionParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CompoundExpressionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CompoundExpressionImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SimpleExpressionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SimpleExpressionParser.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,15 +24,15 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="7" />
+          <entry key="JAVA" value="3" />
           <entry key="Markdown" value="1" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="939" />
-          <entry key="PLAIN_TEXT" value="48" />
+          <entry key="JAVA" value="294" />
+          <entry key="PLAIN_TEXT" value="11" />
         </counts>
       </usages-collector>
     </session>
@@ -61,7 +54,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="2" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -69,85 +63,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/ExpressionParserPartialTester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/ExpressionParseException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#188#189#0" expanded="true" />
-                <element signature="e#209#210#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/SimpleExpressionParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="115" column="50" selection-start-line="115" selection-start-column="50" selection-end-line="115" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Expression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="1966" selection-start-line="1966" selection-end-line="1966" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/CompoundExpressionImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#266#267#0" expanded="true" />
-                <element signature="e#302#303#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Source/SimpleExpressionImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="69" column="6" lean-forward="true" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
-              <folding>
-                <element signature="e#266#267#0" expanded="true" />
-                <element signature="e#302#303#0" expanded="true" />
-                <element signature="e#686#687#0" expanded="true" />
-                <element signature="e#713#714#0" expanded="true" />
-                <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#912#913#0" expanded="true" />
-                <element signature="e#970#971#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="544">
+              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -155,17 +74,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/CompoundExpression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+        <entry file="file://$PROJECT_DIR$/Source/SimpleExpressionParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state relative-caret-position="239">
+              <caret line="49" column="97" selection-start-line="49" selection-start-column="97" selection-end-line="49" selection-end-column="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Source/CompoundExpressionImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="86" column="30" lean-forward="true" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/ExpressionParserPartialTester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -179,11 +119,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>compoun</find>
-    </findStrings>
-  </component>
   <component name="Git.Rebase.Settings">
     <option name="INTERACTIVE" value="false" />
   </component>
@@ -196,9 +131,6 @@
         <option value="$PROJECT_DIR$/Tests/ExpressionParserPartialTester.java" />
         <option value="$PROJECT_DIR$/Source/ExpressionImpl.java" />
         <option value="$PROJECT_DIR$/Source/Expression.java" />
-        <option value="$PROJECT_DIR$/Source/LiteralExpressionImpl.java" />
-        <option value="$PROJECT_DIR$/Source/SimpleExpressionImpl.java" />
-        <option value="$PROJECT_DIR$/Source/CompoundExpressionImpl.java" />
         <option value="$PROJECT_DIR$/Source/SimpleExpressionParser.java" />
       </list>
     </option>
@@ -211,45 +143,61 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-15" />
-    <option name="y" value="-15" />
-    <option name="width" value="1940" />
-    <option name="height" value="1050" />
+    <option name="width" value="3870" />
+    <option name="height" value="2075" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Project-5-R1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project-5-R1" type="462c0819:PsiDirectoryNode" />
+              <item name="Project 5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project 5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Project-5-R1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project-5-R1" type="462c0819:PsiDirectoryNode" />
+              <item name="Project 5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project 5" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Project-5-R1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project-5-R1" type="462c0819:PsiDirectoryNode" />
+              <item name="Project 5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project 5" type="462c0819:PsiDirectoryNode" />
               <item name="Source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project 5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project 5" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Project-5-R1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Project-5-R1" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543965797403" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543967024909" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/hamcrest-core-1.3.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -274,8 +222,11 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/Project 5.iml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Source/ExpressionImpl.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Out/production/Project 5/SimpleExpressionParser.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Source/CompoundExpressionImpl.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Source/SimpleExpressionParser.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -283,6 +234,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/uiDesigner.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Source/SimpleExpressionImpl.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -290,6 +243,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Out/production/Project 5/ExpressionImpl.class</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -395,7 +349,7 @@
       <updated>1543632337175</updated>
       <workItem from="1543632338503" duration="914000" />
       <workItem from="1543700352693" duration="646000" />
-      <workItem from="1543963026043" duration="2767000" />
+      <workItem from="1543963026043" duration="843000" />
     </task>
     <task id="LOCAL-00001" summary="Parses">
       <created>1543700397970</created>
@@ -411,56 +365,49 @@
       <option name="project" value="LOCAL" />
       <updated>1543963741181</updated>
     </task>
-    <task id="LOCAL-00003" summary="Something clever">
-      <created>1543963883152</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1543963883152</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ExpressionParserPartialTester - 2018.12.04 at 18h 01m 38s.xml">
+    <history-entry file="ExpressionParserPartialTester - 2018.11.30 at 21h 55m 27s.xml">
       <configuration name="ExpressionParserPartialTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExpressionParserPartialTester - 2018.12.04 at 18h 02m 31s.xml">
+    <history-entry file="ExpressionParserPartialTester - 2018.11.30 at 21h 55m 35s.xml">
       <configuration name="ExpressionParserPartialTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExpressionParserPartialTester - 2018.12.04 at 18h 02m 43s.xml">
+    <history-entry file="ExpressionParserPartialTester - 2018.11.30 at 21h 55m 49s.xml">
       <configuration name="ExpressionParserPartialTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExpressionParserPartialTester - 2018.12.04 at 18h 03m 09s.xml">
+    <history-entry file="ExpressionParserPartialTester - 2018.11.30 at 21h 56m 52s.xml">
       <configuration name="ExpressionParserPartialTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExpressionParserPartialTester - 2018.12.04 at 18h 04m 16s.xml">
+    <history-entry file="ExpressionParserPartialTester - 2018.11.30 at 22h 06m 29s.xml">
       <configuration name="ExpressionParserPartialTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExpressionParserPartialTester - 2018.12.04 at 18h 04m 45s.xml">
+    <history-entry file="ExpressionParserPartialTester - 2018.11.30 at 22h 11m 50s.xml">
       <configuration name="ExpressionParserPartialTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExpressionParserPartialTester - 2018.12.04 at 18h 05m 28s.xml">
+    <history-entry file="ExpressionParserPartialTester - 2018.11.30 at 22h 13m 22s.xml">
       <configuration name="ExpressionParserPartialTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExpressionParserPartialTester - 2018.12.04 at 18h 05m 50s.xml">
+    <history-entry file="ExpressionParserPartialTester - 2018.11.30 at 23h 23m 43s.xml">
       <configuration name="ExpressionParserPartialTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExpressionParserPartialTester - 2018.12.04 at 18h 22m 15s.xml">
+    <history-entry file="ExpressionParserPartialTester - 2018.11.30 at 23h 29m 16s.xml">
       <configuration name="ExpressionParserPartialTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExpressionParserPartialTester - 2018.12.04 at 18h 22m 48s.xml">
+    <history-entry file="ExpressionParserPartialTester - 2018.12.04 at 18h 25m 33s.xml">
       <configuration name="ExpressionParserPartialTester" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7831000" />
+    <option name="totallyTimeSpent" value="8001000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25285044" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -469,7 +416,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32765958" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32719547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -477,7 +424,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -530,8 +477,7 @@
     <MESSAGE value="actual commit yay" />
     <MESSAGE value="fixed Out folder and junit/hamcrest" />
     <MESSAGE value="Parses" />
-    <MESSAGE value="Something clever" />
-    <option name="LAST_COMMIT_MESSAGE" value="Something clever" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parses" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
@@ -545,8 +491,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Source/ExpressionParseException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+          <folding>
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -559,7 +520,7 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9010">
-          <caret line="715" column="10" selection-start-line="715" selection-start-column="10" selection-end-line="715" selection-end-column="10" />
+          <caret line="669" column="10" selection-start-line="669" selection-start-column="10" selection-end-line="669" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -570,92 +531,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/ExpressionParseException.java">
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/runConfigurations/ExpressionParserPartialTester.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="47" lean-forward="true" selection-start-column="47" selection-end-column="47" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/ExpressionParserPartialTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="1966" selection-start-line="1966" selection-end-line="1966" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Expression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+        <state relative-caret-position="17">
+          <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/CompoundExpression.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/LiteralExpressionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-          <folding>
-            <element signature="e#115#116#0" expanded="true" />
-            <element signature="e#142#143#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/CompoundExpressionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-          </folding>
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/SimpleExpressionParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="115" column="50" selection-start-line="115" selection-start-column="50" selection-end-line="115" selection-end-column="50" />
+        <state relative-caret-position="239">
+          <caret line="49" column="97" selection-start-line="49" selection-start-column="97" selection-end-line="49" selection-end-column="97" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/SimpleExpressionImpl.java">
+    <entry file="file://$PROJECT_DIR$/Source/CompoundExpressionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="69" column="6" lean-forward="true" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+        <state relative-caret-position="274">
+          <caret line="86" column="30" lean-forward="true" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
           <folding>
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -717,6 +632,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -724,7 +640,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>hamcrest-core-1.3</last-edited>
+          <last-edited>junit-4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
