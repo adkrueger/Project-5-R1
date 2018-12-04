@@ -54,7 +54,7 @@ public class SimpleExpressionParser implements ExpressionParser {
                  *  Children should be m1 and m2
                  */
 
-                ExpressionImpl opExpr = new ExpressionImpl();
+                CompoundExpressionImpl opExpr = new CompoundExpressionImpl(Character.toString(op));
                 opExpr.addSubexpression(m1Exp);
                 opExpr.addSubexpression(m2Exp);
                 return opExpr;
