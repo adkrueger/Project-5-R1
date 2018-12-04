@@ -1,21 +1,10 @@
-import java.util.ArrayList;
-import java.util.List;
+public class SimpleExpressionImpl implements Expression {
 
-public class CompoundExpressionImpl implements CompoundExpression {
     private String _contents;
-    private List<Expression> _expressions = new ArrayList<>();
+    private CompoundExpression _parent;
 
-    CompoundExpressionImpl(String contents) {
+    SimpleExpressionImpl(String contents) {
         _contents = contents;
-    }
-
-    /**
-     * Adds the specified expression as a child.
-     *
-     * @param subexpression the child expression to add
-     */
-    public void addSubexpression(Expression subexpression) {
-        _expressions.add(subexpression);
     }
 
     /**
@@ -24,7 +13,7 @@ public class CompoundExpressionImpl implements CompoundExpression {
      * @return the expression's parent
      */
     public CompoundExpression getParent() {
-        return null;
+        return _parent;
     }
 
     /**
@@ -33,7 +22,7 @@ public class CompoundExpressionImpl implements CompoundExpression {
      * @param parent the CompoundExpression that should be the parent of the target object
      */
     public void setParent(CompoundExpression parent) {
-
+        _parent = parent;
     }
 
     /**
@@ -44,13 +33,7 @@ public class CompoundExpressionImpl implements CompoundExpression {
      * @return the deep copy
      */
     public Expression deepCopy() {
-        CompoundExpressionImpl expression = new CompoundExpressionImpl(this._contents);
-
-        for (Expression e : _expressions) {
-            expression.addSubexpression(e.deepCopy());
-        }
-
-        return expression;
+        return new SimpleExpressionImpl(_contents);
     }
 
     /**
@@ -72,25 +55,8 @@ public class CompoundExpressionImpl implements CompoundExpression {
      * @param indentLevel   the indentation level (number of tabs from the left margin) at which to start
      */
     public void convertToString(StringBuilder stringBuilder, int indentLevel) {
-        indent(stringBuilder, indentLevel);
-        stringBuilder.append(_contents);
-        stringBuilder.append("\n");
-        int indentMod;               // modifies the number of indents. either 1 or 0
-        int childCount = 0;          // represents the "index" number of the child in relation to the parent
-
-        for (Expression n : _expressions) {
-            childCount++;            // increases to represent the index of the child
-
-            if (childCount == 1)     // if this child is the newest of a set, then increase indent by 1
-                indentMod = 1;
-            else                     // otherwise the indent level remains the same
-                indentMod = 0;
-
-            n.convertToString(stringBuilder, indentLevel += indentMod);   // recursive call to keep going down the list
-        }
+        //TODO: Figure this out too
     }
-
-
 
     public String convertToString(int indentLevel) {
         final StringBuilder stringBuilder = new StringBuilder();
@@ -105,7 +71,7 @@ public class CompoundExpressionImpl implements CompoundExpression {
      * @param stringBuilder the StringBuilder to which to append tab characters.
      * @param indentLevel   the number of tabs to append.
      */
-    private static void indent(StringBuilder stringBuilder, int indentLevel) {
+    public static void indent(StringBuilder stringBuilder, int indentLevel) {
         for (int i = 0; i < indentLevel; i++) {
             stringBuilder.append('\t');
         }

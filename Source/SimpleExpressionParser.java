@@ -31,16 +31,9 @@ public class SimpleExpressionParser implements ExpressionParser {
 	}
 	
 	private Expression parseExpression(String str) {
-		Expression expression;
+		//Expression expression;
 
-		try {
-		    expression = parse(str, false);
-            return expression;
-		}
-		catch(ExpressionParseException e) {
-		    e.printStackTrace();
-		    return null;
-        }
+		return parseE(str);
 	}
 
     private static Expression parseHelper(String str, char op, Function<String, Expression> m1,
@@ -69,9 +62,9 @@ public class SimpleExpressionParser implements ExpressionParser {
         if (A != null) {
             return A;
         }
-        Expression E = parseE(str);
-        if (E != null) {
-            return E;
+        Expression X = parseX(str);
+        if (X != null) {
+            return X;
         }
         return null;
     }
@@ -100,11 +93,14 @@ public class SimpleExpressionParser implements ExpressionParser {
 
     private static Expression parseX (String str) {
         // (E) or L
-        Expression middleE = parseE(str.substring(1, str.length() - 1));
         if (str.length() >= 2 && str.charAt(0) == '(' && str.charAt(str.length()-1)
-                == ')' &&  middleE  != null) {
-            return middleE;
+                == ')') {
+            Expression middleE = parseE(str.substring(1, str.length() - 1));
+            if(middleE != null) {
+                return middleE;
+            }
         }
+
         Expression L = parseL(str);
         if(L != null) {
             return L;
@@ -115,8 +111,9 @@ public class SimpleExpressionParser implements ExpressionParser {
     private static Expression parseL (String str) {
         if(str.matches("[a-z]|[0-9]+")) {
             //TODO: create new expression to return;
-            return null;
+            return new SimpleExpressionImpl(str);
         }
+        System.out.println(str + " didn't match");
         return null;
     }
 
