@@ -77,7 +77,6 @@ public class CompoundExpressionImpl implements CompoundExpression {
         stringBuilder.append("\n");
         int indentMod;               // modifies the number of indents. either 1 or 0
         int childCount = 0;          // represents the "index" number of the child in relation to the parent
-
         for (Expression n : _expressions) {
             childCount++;            // increases to represent the index of the child
 
