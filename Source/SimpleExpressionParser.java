@@ -46,7 +46,6 @@ public class SimpleExpressionParser implements ExpressionParser {
                  *  Top of node should be the op
                  *  Children should be m1 and m2
                  */
-
                 CompoundExpressionImpl opExpr = new CompoundExpressionImpl(Character.toString(op));
                 opExpr.addSubexpression(m1Exp);
                 opExpr.addSubexpression(m2Exp);
@@ -88,6 +87,10 @@ public class SimpleExpressionParser implements ExpressionParser {
         if (exp != null) {
             return exp;
         }
+        Expression M = parseM(str);
+        if(M != null) {
+            return M;
+        }
         return null;
     }
 
@@ -97,10 +100,11 @@ public class SimpleExpressionParser implements ExpressionParser {
                 == ')') {
             Expression middleE = parseE(str.substring(1, str.length() - 1));
             if(middleE != null) {
-                return middleE;
+                CompoundExpressionImpl opExpr = new CompoundExpressionImpl("()");
+                opExpr.addSubexpression(middleE);
+                return opExpr;
             }
         }
-
         Expression L = parseL(str);
         if(L != null) {
             return L;
@@ -110,10 +114,8 @@ public class SimpleExpressionParser implements ExpressionParser {
 
     private static Expression parseL (String str) {
         if(str.matches("[a-z]|[0-9]+")) {
-            //TODO: create new expression to return;
             return new SimpleExpressionImpl(str);
         }
-        System.out.println(str + " didn't match");
         return null;
     }
 

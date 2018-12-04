@@ -55,7 +55,9 @@ public class SimpleExpressionImpl implements Expression {
      * @param indentLevel   the indentation level (number of tabs from the left margin) at which to start
      */
     public void convertToString(StringBuilder stringBuilder, int indentLevel) {
-        //TODO: Figure this out too
+        indent(stringBuilder, indentLevel);
+        stringBuilder.append(_contents);
+        stringBuilder.append("\n");
     }
 
     public String convertToString(int indentLevel) {
