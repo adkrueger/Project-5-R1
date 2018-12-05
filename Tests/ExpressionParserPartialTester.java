@@ -1,26 +1,23 @@
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
-import java.util.*;
-import java.io.*;
 
-/**
+/*
  * Code to test Project 5; you should definitely add more tests!
  */
 public class ExpressionParserPartialTester {
 	private ExpressionParser _parser;
 
 	@Before
-	/**
-	 * Instantiates the actors and movies graphs
-     * TODO: Fix this comment
+	/*
+	 * Instantiates the parser
 	 */
-	public void setUp () throws IOException {
+	public void setUp() {
 		_parser = new SimpleExpressionParser();
 	}
 
 	@Test
-	/**
+	/*
 	 * Just verifies that the SimpleExpressionParser could be instantiated without crashing.
 	 */
 	public void finishedLoading () {
@@ -29,7 +26,7 @@ public class ExpressionParserPartialTester {
 	}
 
 	@Test
-	/**
+	/*
 	 * Verifies that a specific expression is parsed into the correct parse tree.
 	 */
 	public void testExpression1 () throws ExpressionParseException {
@@ -39,7 +36,7 @@ public class ExpressionParserPartialTester {
 	}
 
 	@Test
-	/**
+	/*
 	 * Verifies that a specific expression is parsed into the correct parse tree.
 	 */
 	public void testExpression2 () throws ExpressionParseException {
@@ -49,17 +46,18 @@ public class ExpressionParserPartialTester {
 	}
 
 	@Test
-	/**
+	/*
 	 * Verifies that a specific expression is parsed into the correct parse tree.
 	 */
 	public void testExpression3 () throws ExpressionParseException {
 		final String expressionStr = "4*(z+5*x)";
 		final String parseTreeStr = "*\n\t4\n\t()\n\t\t+\n\t\t\tz\n\t\t\t*\n\t\t\t\t5\n\t\t\t\tx\n";
+		System.out.println(parseTreeStr);
 		assertEquals(parseTreeStr, _parser.parse(expressionStr, false).convertToString(0));
 	}
 
 	@Test
-	/**
+	/*
 	 * Verifies that a specific expression is parsed into the correct parse tree.
 	 */
 	public void testExpressionAndFlatten1 () throws ExpressionParseException {
@@ -69,7 +67,7 @@ public class ExpressionParserPartialTester {
 	}
 
 	@Test
-	/**
+	/*
 	 * Verifies that a specific expression is parsed into the correct parse tree.
 	 */
 	public void testExpressionAndFlatten2 () throws ExpressionParseException {
@@ -79,7 +77,7 @@ public class ExpressionParserPartialTester {
 	}
 
 	@Test(expected = ExpressionParseException.class) 
-	/**
+	/*
 	 * Verifies that a specific expression is parsed into the correct parse tree.
 	 */
 	public void testException1 () throws ExpressionParseException {
@@ -88,7 +86,7 @@ public class ExpressionParserPartialTester {
 	}
 
 	@Test(expected = ExpressionParseException.class) 
-	/**
+	/*
 	 * Verifies that a specific expression is parsed into the correct parse tree.
 	 */
 	public void testException2 () throws ExpressionParseException {
@@ -97,7 +95,7 @@ public class ExpressionParserPartialTester {
 	}
 
 	@Test(expected = ExpressionParseException.class) 
-	/**
+	/*
 	 * Verifies that a specific expression is parsed into the correct parse tree.
 	 */
 	public void testException3 () throws ExpressionParseException {

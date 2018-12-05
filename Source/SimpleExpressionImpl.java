@@ -1,29 +1,15 @@
 public class SimpleExpressionImpl implements Expression {
 
     private String _contents;
-    private CompoundExpression _parent;
 
     SimpleExpressionImpl(String contents) {
         _contents = contents;
     }
 
-    /**
-     * Returns the expression's parent.
-     *
-     * @return the expression's parent
-     */
-    public CompoundExpression getParent() {
-        return _parent;
+    public String getContents() {
+        return _contents;
     }
 
-    /**
-     * Sets the parent be the specified expression.
-     *
-     * @param parent the CompoundExpression that should be the parent of the target object
-     */
-    public void setParent(CompoundExpression parent) {
-        _parent = parent;
-    }
 
     /**
      * Creates and returns a deep copy of the expression.
@@ -73,7 +59,7 @@ public class SimpleExpressionImpl implements Expression {
      * @param stringBuilder the StringBuilder to which to append tab characters.
      * @param indentLevel   the number of tabs to append.
      */
-    public static void indent(StringBuilder stringBuilder, int indentLevel) {
+    private static void indent(StringBuilder stringBuilder, int indentLevel) {
         for (int i = 0; i < indentLevel; i++) {
             stringBuilder.append('\t');
         }
