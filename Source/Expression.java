@@ -1,15 +1,9 @@
 interface Expression {
 	/**
-	 * Returns the expression's parent.
-	 * @return the expression's parent
+	 * Returns the expression's content.
+	 * @return the expression's content
 	 */
-	CompoundExpression getParent ();
-
-	/**
-	 * Sets the parent be the specified expression.
-	 * @param parent the CompoundExpression that should be the parent of the target object
-	 */
-	void setParent (CompoundExpression parent);
+	String getContents ();
 
 	/**
 	 * Creates and returns a deep copy of the expression.
@@ -36,21 +30,9 @@ interface Expression {
 	 */
 	void convertToString (StringBuilder stringBuilder, int indentLevel);
 
-	public default String convertToString (int indentLevel) {
+	default String convertToString (int indentLevel) {
 		final StringBuilder stringBuilder = new StringBuilder();
 		convertToString(stringBuilder, indentLevel);
 		return stringBuilder.toString();
-	}
-
-	/**
-	 * Static helper method to indent a specified number of times from the left margin, by
-	 * appending tab characters to the specified StringBuilder.
-	 * @param stringBuilder the StringBuilder to which to append tab characters.
-	 * @param indentLevel the number of tabs to append.
-	 */
-	public static void indent (StringBuilder stringBuilder, int indentLevel) {
-		for (int i = 0; i < indentLevel; i++) {
-			stringBuilder.append('\t');
-		}
 	}
 }
