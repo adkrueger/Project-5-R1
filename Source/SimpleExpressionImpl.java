@@ -2,10 +2,19 @@ public class SimpleExpressionImpl implements Expression {
 
     private String _contents;
 
+    /**
+     * constructor that takes the contents of the expression
+     * as a String
+     *
+     * @param contents the contents as a String
+     */
     SimpleExpressionImpl(String contents) {
         _contents = contents;
     }
 
+    /**
+     * @return the contents
+     */
     public String getContents() {
         return _contents;
     }
@@ -30,7 +39,6 @@ public class SimpleExpressionImpl implements Expression {
      * c itself will be removed. This method modifies the expression itself.
      */
     public void flatten() {
-
     }
 
     /**
@@ -46,6 +54,12 @@ public class SimpleExpressionImpl implements Expression {
         stringBuilder.append("\n");
     }
 
+    /**
+     * Helper function to call convertToString
+     *
+     * @param indentLevel the initial level of indentation
+     * @return the properly formatted string
+     */
     public String convertToString(int indentLevel) {
         final StringBuilder stringBuilder = new StringBuilder();
         convertToString(stringBuilder, indentLevel);

@@ -5,6 +5,11 @@ public class CompoundExpressionImpl extends SimpleExpressionImpl implements Comp
 
     private List<Expression> _expressions = new ArrayList<>();
 
+    /**
+     * The constructor for the CompoundExpressionImpl
+     *
+     * @param contents the given contents of the CompoundExpressionImpl
+     */
     CompoundExpressionImpl(String contents) {
         super(contents);
     }
@@ -18,8 +23,12 @@ public class CompoundExpressionImpl extends SimpleExpressionImpl implements Comp
         _expressions.add(subexpression);
     }
 
-    private List<Expression> getSubexpressions()
-    {
+    /**
+     * Returns the CompoundExpressionImpl's following expressions
+     *
+     * @return the list of expressions
+     */
+    private List<Expression> getSubexpressions() {
         return _expressions;
     }
 
@@ -53,8 +62,7 @@ public class CompoundExpressionImpl extends SimpleExpressionImpl implements Comp
             if (expression instanceof CompoundExpressionImpl && isMultOrAdd(expression.getContents())) {
                 expression.flatten();
                 expressions.addAll(((CompoundExpressionImpl) expression).getSubexpressions());
-            }
-            else {
+            } else {
                 expression.flatten();
                 expressions.add(expression);
             }
@@ -62,6 +70,14 @@ public class CompoundExpressionImpl extends SimpleExpressionImpl implements Comp
         _expressions = expressions;
     }
 
+    /**
+     * Checks whether a string is * or + and matches the
+     * current Expression contents
+     *
+     * @param str the given string to be checked
+     * @return true if matches the contents and + or *,
+     * false if not
+     */
     private boolean isMultOrAdd(String str) {
         return str.equals(this.getContents()) && (str.equals("*") || str.equals("+"));
     }

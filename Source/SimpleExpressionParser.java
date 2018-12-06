@@ -19,7 +19,7 @@ public class SimpleExpressionParser implements ExpressionParser {
 	public Expression parse (String str, boolean withJavaFXControls) throws ExpressionParseException {
 		// Remove spaces -- this simplifies the parsing logic
 		str = str.replaceAll(" ", "");
-		Expression expression = parseExpression(str);
+		Expression expression = parseE(str);
 		if (expression == null) {
 			// If we couldn't parse the string, then raise an error
 			throw new ExpressionParseException("Cannot parse expression: " + str);
@@ -29,13 +29,17 @@ public class SimpleExpressionParser implements ExpressionParser {
 		expression.flatten();
 		return expression;
 	}
-	
-	private Expression parseExpression(String str) {
-		//Expression expression;
 
-		return parseE(str);
-	}
-
+    /**
+     * Checks if the input, along with two lambda expressions, matches the
+     * given operator
+     * @param str the input that is being tested
+     * @param op the operator that is between the two lambda functions
+     * @param m1 the first lambda function
+     * @param m2 the second lambda function
+     * @return the expression corresponding with the operator op, otherwise
+     * null if it doesn't match
+     */
     private static Expression parseHelper(String str, char op, Function<String, Expression> m1,
                                           Function<String, Expression> m2) {
         for (int i = 1; i < str.length() - 1; i++) {
@@ -51,12 +55,19 @@ public class SimpleExpressionParser implements ExpressionParser {
         return null;
     }
 
+    /**
+     * Checks whether or not the string matches A or X
+     * @param str the given string
+     * @return Expression A if the string matches A, Expression X if the
+     * string matches X, or null if it matches neither
+     */
     private static Expression parseE (String str) {
         // A or X
         Expression A = parseA(str);
         if (A != null) {
             return A;
         }
+
         Expression X = parseX(str);
         if (X != null) {
             return X;
@@ -64,6 +75,12 @@ public class SimpleExpressionParser implements ExpressionParser {
         return null;
     }
 
+    /**
+     * Checks whether or not the string matches M*M or X
+     * @param str the given string
+     * @return Expression exp if the string matches M*M, Expression X if the
+     * string matches X, or null if it matches neither
+     */
     private static Expression parseM(String str) {
         // M * M or X
         Expression exp = parseHelper(str, '*', SimpleExpressionParser::parseM, SimpleExpressionParser::parseM);
@@ -77,6 +94,12 @@ public class SimpleExpressionParser implements ExpressionParser {
         return null;
     }
 
+    /**
+     * Checks whether or not the string matches A+M or M
+     * @param str the given string
+     * @return Expression exp if the string matches A+M, Expression M if the
+     * string matches M, or null if it matches neither
+     */
     private static Expression parseA (String str) {
         // A + M or M
         Expression exp = parseHelper(str, '+', SimpleExpressionParser::parseA, SimpleExpressionParser::parseM);
@@ -90,6 +113,12 @@ public class SimpleExpressionParser implements ExpressionParser {
         return null;
     }
 
+    /**
+     * Checks whether or not the string matches (E) or L
+     * @param str the given string
+     * @return Expression opExpr if the string matches (E), Expression L if the
+     * string matches L, or null if it matches neither
+     */
     private static Expression parseX (String str) {
         // (E) or L
         if (str.length() >= 2 && str.charAt(0) == '(' && str.charAt(str.length()-1)
@@ -108,6 +137,13 @@ public class SimpleExpressionParser implements ExpressionParser {
         return null;
     }
 
+    /**
+     * Checks whether or not the string is a SimpleExpression using the
+     * letters a-z and any number (i.e. a number or a variable)
+     * @param str the given string
+     * @return a SimpleExpressionImpl representing the variable/number
+     * or null if it doesn't match either
+     */
     private static Expression parseL (String str) {
         if(str.matches("[a-z]|[0-9]+")) {
             return new SimpleExpressionImpl(str);

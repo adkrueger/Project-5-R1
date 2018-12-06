@@ -52,7 +52,6 @@ public class ExpressionParserPartialTester {
 	public void testExpression3 () throws ExpressionParseException {
 		final String expressionStr = "4*(z+5*x)";
 		final String parseTreeStr = "*\n\t4\n\t()\n\t\t+\n\t\t\tz\n\t\t\t*\n\t\t\t\t5\n\t\t\t\tx\n";
-		System.out.println(parseTreeStr);
 		assertEquals(parseTreeStr, _parser.parse(expressionStr, false).convertToString(0));
 	}
 
@@ -73,6 +72,27 @@ public class ExpressionParserPartialTester {
 	public void testExpressionAndFlatten2 () throws ExpressionParseException {
 		final String expressionStr = "(x+(x)+(x+x)+x)";
 		final String parseTreeStr = "()\n\t+\n\t\tx\n\t\t()\n\t\t\tx\n\t\t()\n\t\t\t+\n\t\t\t\tx\n\t\t\t\tx\n\t\tx\n";
+		assertEquals(parseTreeStr, _parser.parse(expressionStr, false).convertToString(0));
+	}
+
+	@Test
+	/*
+	 * Verifies that a specific expression is parsed into the correct parse tree.
+	 */
+	public void testExpressionAndFlatten3 () throws ExpressionParseException {
+		final String expressionStr = "5+5+5+5+5+5+5+5+5";
+		final String parseTreeStr = "+\n\t5\n\t5\n\t5\n\t5\n\t5\n\t5\n\t5\n\t5\n\t5\n";
+		System.out.println(parseTreeStr);
+		assertEquals(parseTreeStr, _parser.parse(expressionStr, false).convertToString(0));
+	}
+
+	@Test
+	/*
+	 * Verifies that a specific expression is parsed into the correct parse tree.
+	 */
+	public void testExpressionAndFlatten4 () throws ExpressionParseException {
+		final String expressionStr = "5+(5+j)+5+x+5+5*609*98765";
+		final String parseTreeStr = "+\n\t5\n\t()\n\t\t+\n\t\t\t5\n\t\t\tj\n\t5\n\tx\n\t5\n\t*\n\t\t5\n\t\t609\n\t\t98765\n";
 		assertEquals(parseTreeStr, _parser.parse(expressionStr, false).convertToString(0));
 	}
 
