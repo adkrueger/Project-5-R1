@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompoundExpressionImpl extends SimpleExpressionImpl implements CompoundExpression {
+public abstract class CompoundExpressionImpl extends SimpleExpressionImpl implements CompoundExpression {
 
     private List<Expression> _expressions = new ArrayList<>();
 
@@ -12,6 +12,15 @@ public class CompoundExpressionImpl extends SimpleExpressionImpl implements Comp
      */
     CompoundExpressionImpl(String contents) {
         super(contents);
+    }
+
+    /**
+     * Returns the list of expressions
+     *
+     * @return the list of expressions
+     */
+    List<Expression> getExpressions() {
+        return _expressions;
     }
 
     /**
@@ -40,13 +49,7 @@ public class CompoundExpressionImpl extends SimpleExpressionImpl implements Comp
      * @return the deep copy
      */
     public Expression deepCopy() {
-        CompoundExpressionImpl expression = new CompoundExpressionImpl(getContents());
-
-        for (Expression e : _expressions) {
-            expression.addSubexpression(e.deepCopy());
-        }
-
-        return expression;
+        return null;
     }
 
     /**
@@ -59,11 +62,10 @@ public class CompoundExpressionImpl extends SimpleExpressionImpl implements Comp
     public void flatten() {
         List<Expression> expressions = new ArrayList<>();
         for (Expression expression : _expressions) {
-            if (expression instanceof CompoundExpressionImpl && isMultOrAdd(expression.getContents())) {
-                expression.flatten();
+            expression.flatten();
+            if (isMultOrAdd(expression)) {
                 expressions.addAll(((CompoundExpressionImpl) expression).getSubexpressions());
             } else {
-                expression.flatten();
                 expressions.add(expression);
             }
         }
@@ -71,15 +73,16 @@ public class CompoundExpressionImpl extends SimpleExpressionImpl implements Comp
     }
 
     /**
-     * Checks whether a string is * or + and matches the
+     * Checks whether a expression is * or + and matches the
      * current Expression contents
      *
-     * @param str the given string to be checked
+     * @param expression the given expression to be checked
      * @return true if matches the contents and + or *,
      * false if not
      */
-    private boolean isMultOrAdd(String str) {
-        return str.equals(this.getContents()) && (str.equals("*") || str.equals("+"));
+    private boolean isMultOrAdd(Expression expression) {
+        return expression.getContents().equals(this.getContents()) &&
+                (expression instanceof AdditionExpression || expression instanceof MultiplicationExpression);
     }
 
     /**
